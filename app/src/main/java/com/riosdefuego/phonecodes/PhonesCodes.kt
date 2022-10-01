@@ -2,7 +2,7 @@ package com.riosdefuego.phonecodes
 
 class PhonesCodes {
 
-    private val countryCodes: HashMap<String, Any> = HashMap()
+    private val countryCodes: HashMap<String, String> = HashMap()
 
     init {
         countryCodes.put("Afganistán", "+93")
@@ -236,7 +236,7 @@ class PhonesCodes {
         countryCodes.put("Zimbabue", "+263")
     }
 
-    fun getMapOfCountryNamesAndCodes(): HashMap<String, Any> {
+    fun getMapOfCountryNamesAndCodes(): HashMap<String, String> {
         return countryCodes
     }
 
@@ -245,7 +245,7 @@ class PhonesCodes {
         return namesList.toList().sorted()
     }
 
-    fun getCodeList(): List<Any>{
+    fun getCodeList(): List<String>{
         val codesList = countryCodes.values
         return codesList.toList()
     }
